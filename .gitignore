@@ -1,0 +1,3 @@
+# Ignore virtual environments
+model/venv310/
+venv310/

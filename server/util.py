@@ -93,7 +93,7 @@ def get_cropped_image_if_2_eyes(image_path, image_base64_data):
             cropped_faces.append(roi_color)
     return cropped_faces
 
-def get_b64_test_image_for_virat():
+def get_b64_test_image_for_ronaldo():
     base_path = os.path.dirname(os.path.abspath(__file__))  # .../server
     b64_path = os.path.join(base_path, "b64.txt")
     with open(b64_path, "r") as f:
@@ -102,13 +102,13 @@ def get_b64_test_image_for_virat():
 # For quick testing
 if __name__ == '__main__':
     load_saved_artifacts()
-    #print(classify_image(get_b64_test_image_for_virat(), None))
+    #print(classify_image(get_b64_test_image_for_ronaldo(), None))
 
     base_path = os.path.dirname(os.path.abspath(__file__))
     test_img_dir = os.path.join(base_path, "test_images")
 
-    # print(classify_image(None, os.path.join(test_img_dir, "federer1.jpg")))
-    # print(classify_image(None, os.path.join(test_img_dir, "federer2.jpg")))
-    # print(classify_image(None, os.path.join(test_img_dir, "virat1.jpg")))
-    # print(classify_image(None, os.path.join(test_img_dir, "virat2.jpg")))
-    print(classify_image(None, os.path.join(test_img_dir, "virat3.jpg")))
+    #print(classify_image(None, os.path.join(test_img_dir, "carlos1.jpg")))
+    #print(classify_image(None, os.path.join(test_img_dir, "ibra.jpg")))
+    # print(classify_image(None, os.path.join(test_img_dir, "messi_12.jpg")))
+    print(classify_image(None, os.path.join(test_img_dir, "modric.jpg")))
+    #print(classify_image(None, os.path.join(test_img_dir, "ronaldo_159.jpg")))
